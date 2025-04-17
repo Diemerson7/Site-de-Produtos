@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -12,26 +12,26 @@
 <body>
     <div class="container">
         <h1>Cadastro</h1>
-        <form action="#">
+        <form action="/cadastro" method="POST" onsubmit="return verificarSenhas()">
             <div class="input-box">
-                <input type="text" placeholder="Username" required>
+                <input type="text" name="usuario" placeholder="Nome" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="email" placeholder="E-mail" required>
+                <input type="email" name="email" placeholder="E-mail" required>
                 <i class="bx bxs-user"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Password" required>
+                <input type="password" name="senha" placeholder="Senha" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Confirm Password" required>
+                <input type="password" name="confirme sua senha" placeholder="Confirme sua senha" required>
                 <i class="bx bxs-lock-alt"></i>
             </div>
-            <button type="submit" class="login">Cadastrar</button>
+            <button type="submit" class="login">Cadastro</button>
             <div class="register-link">
-                <p>Do you have an account? <a href="login.html">Log in</a></p>
+                <p>Você tem uma conta? <a href="/login">Login</a></p>
             </div>
         </form>
     </div>

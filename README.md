@@ -35,6 +35,13 @@ O site foi estilizado com **CSS puro**, utilizando a fonte **Poppins** e efeitos
 
 - Remover usuário da tabela.
 
+4.Criar produtos 
+- Formulário: Nome do produto e o preço.
+- Opcional: Upload de uma capa de imagem.
+
+
+5.Editar produtos
+- Alterar informações: Nome, Preço e imagem.
 
 ## 📁 Estrutura de arquivos
 

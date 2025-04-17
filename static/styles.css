@@ -9,6 +9,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -120,4 +121,63 @@ body {
 
 .register-link a:hover {
   text-decoration: underline;
+}
+
+.button {
+  display: inline-block; /* Permite que o link se comporte como um bloco */
+  padding: 15px 30px; /* Espaçamento interno do botão */
+  background-color: #ffffff; /* Cor de fundo do botão */
+  color: #333; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 40px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: 600; /* Peso da fonte */
+  text-decoration: none; /* Remove o sublinhado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* Sombra do botão */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.button:hover {
+  background-color: transparent; /* Cor de fundo ao passar o mouse */
+  color: #fff; /* Cor do texto ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.button:active {
+  transform: translateY(0); /* Retorna à posição original ao clicar */
+}
+
+div.pagina_inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+header.botoes {
+  margin-bottom: 100%;
+}
+
+div.produto {
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 10px;
+}
+
+section.produtos {
+  display: flex;
+  gap: 20px;
+}
+
+header.titulo {
+  display: flex;
+}
+
+body#home {
+  justify-content: space-around;
+}
+
+nav {
+  position: relative;
+  left: 80%;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Produtos</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <form action="/criar_produto" method="POST">
+        <p>Nome do Produto</p>
+
+        <input type='text' name='nome_do_produto' placeholder="Nome do Produto">
+        <p>Produto</p>
+
+        <input type='text' name='produto' placeholder="Nome do Produto">
+        <p>Preço</p>
+
+        <input type='text' name='preco' placeholder="Preço do Produto">
+
+        <br>
+        <div class="botoes">
+            <!-- <a href="">Criar conta</a> -->
+            <!-- Mudar o a para um button -->
+            <button type="submit">Criar Produto</button>
+        </div>
+        <!-- FECHAR O FORMS AO FIM -->
+    </form>
+</body>
+</html>
