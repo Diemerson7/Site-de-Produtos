@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #fff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -162,6 +163,7 @@ header.botoes {
 div.produto {
   background-color: rgba(255, 255, 255, 0.616);
   border-radius: 10px;
+  color: #ad00c4;
 }
 
 section.produtos {
@@ -169,15 +171,30 @@ section.produtos {
   gap: 20px;
 }
 
-header.titulo {
+header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 
 body#home {
   justify-content: space-around;
 }
 
 nav {
+  display: flex;
+  list-style: none;
   position: relative;
   left: 80%;
+}
+
+nav > a {
+  margin-left: 20px;
+  text-decoration: none;
 }
