@@ -1,56 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loja TechStore</title>
-  <link rel="stylesheet" href="/static/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
-<body id="home">
-  
-  <header>
-    <div>
-      <h1>TechStore</h1>
-      <h2>Os Melhores Produtos estão aqui!</h2>
-    </div>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Produtos</a>
-      <a href="#">Sobre</a>
-      <a href="#">Contato</a>
-    </nav>
-  </header>
-  
+<body>
+    <header>
+        <div class="header-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" 
+        height="24" viewBox="0 0 24 24" fill="none" 
+            stroke="currentColor" stroke-width="2" 
+            stroke-linecap="round" stroke-linejoin="round" 
+            class="lucide lucide-terminal-icon lucide-terminal">
+            <polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/>
+        </svg>
+        <h1>TechStore</h1>
+        </div>
 
-  <div class="banner">
-  </div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="criar.produto.html">Produtos</a></li>
+            <li><a href="#">Eventos</a></li>
+        </ul>
 
-  <section class="produtos">
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x200" alt="Produto 1">
-      <h3>Produto 1</h3>
-      <p>Descrição curta do produto.</p>
-      <button>Comprar</button>
-    </div>
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x200" alt="Produto 2">
-      <h3>Produto 2</h3>
-      <p>Descrição curta do produto.</p>
-      <button>Comprar</button>
-    </div>
-    <div class="produto">
-      <img src="https://via.placeholder.com/300x200" alt="Produto 3">
-      <h3>Produto 3</h3>
-      <p>Descrição curta do produto.</p>
-      <button>Comprar</button>
-    </div>
-  </section>
+    </header>
 
+    <section class="CTA">
+        <div class="main-text">
+            <h1>Os Melhores Produtos do <span>Discord</span></h1>
+            <a href="#"><button class="dc_btn">Discord</button></a>
+        </div>
 
-  <footer>
-    © 2025 Loja TechStore — Todos os direitos reservados.
-  </footer>
+    </section>
+
+    <section class="tab_products">
+        <h2 class="header2">Nossos <span>Produtos</span></h2>
+        <div class="cards">
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#e560ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shirt-icon lucide-shirt"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
+                <h2>Camisetas</h2>
+                <p>Camisetas exclusivas para devs</p>
+                <span>Em Breve <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </span>
+            </div>
+
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#e560ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee-icon lucide-coffee"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
+                <h2>Canecas</h2>
+                <p>Canecas Personalizadas</p>
+                <span>Em Breve <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </span>
+            </div>
+
+            <div class="card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#e560ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sticker-icon lucide-sticker"><path d="M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z"/><path d="M14 3v4a2 2 0 0 0 2 2h4"/><path d="M8 13h.01"/><path d="M16 13h.01"/><path d="M10 16s.8 1 2 1c1.3 0 2-1 2-1"/></svg>
+                <h2>Stickers</h2>
+                <p>Adesivos para notebook</p>
+                <span>Em Breve <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>2024 - 2025 | Todos os direitos reservados</p>
+
+    </section>
 
 </body>
+
 </html>
