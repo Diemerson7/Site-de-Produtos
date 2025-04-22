@@ -297,4 +297,37 @@ input {
   color: black;
 }
 
+.produtos {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+}
+
+
+.button.criar-produto {
+  width: 350px;
+  background-color: #fff;
+  height: 50px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.button.criar-produto:hover {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.button.criar-produto:active {
+  transform: translateY(0);
+}
 

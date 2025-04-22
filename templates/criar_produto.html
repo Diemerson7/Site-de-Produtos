@@ -7,24 +7,24 @@
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
+    <div class="produtos">
     <form action="/criar_produto" method="POST">
-        <p>Nome do Produto</p>
 
-        <input type='text' name='nome_do_produto' placeholder="Nome do Produto">
-        <p>Produto</p>
+            <div class="input-box">
+              <input type="text" placeholder="Nome do produto">
+            </div>
 
-        <input type='text' name='produto' placeholder="Nome do Produto">
-        <p>Preço</p>
-
-        <input type='text' name='preco' placeholder="Preço do Produto">
+            <div class="input-box">
+              <input type="number" placeholder="Preço do produto">
+            </div>
+          
+    </div>
+        
 
         <br>
         <div class="botoes">
-            <!-- <a href="">Criar conta</a> -->
-            <!-- Mudar o a para um button -->
-            <button type="submit">Criar Produto</button>
+            <a href="/home" class="button criar-produto">Criar Produto</a>
         </div>
-        <!-- FECHAR O FORMS AO FIM -->
     </form>
 </body>
 </html>
