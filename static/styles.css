@@ -284,9 +284,17 @@ header {
   justify-content: center;
   align-items: center;
   height: 40px;
-  color: rgb(70, 28, 104);
+  background: #110020;
+  width: 100%;
 }
 
 .footer p {
   color: #fff;
+  background: #110020;
 }
+
+input {
+  color: black;
+}
+
+
