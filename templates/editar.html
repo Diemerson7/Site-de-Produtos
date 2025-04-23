@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Editar</title>
+</head>
+<body>
+    <div class="produtos">
+        <h2>Editar Projeto</h2>
+        <form action="/editar/{{produto[0]}}" method="POST">
+            <div class="form-group column">
+                <label for="nome">Alterar o Nome</label>
+                <input type="text" id="nome" name="nome" required value="{{produto[1]}}">
+        
+                <label for="preco">Alterar o Preço</label>
+                <input type="text" id="preco" name="preco" required value="{{produto[2]}}" >
+    
+                <label for="imagem">Alterar a imagem</label>
+                <input type="text" id="caminho_imagem" name="caminho_imagem" required value="{{produto[3]}}">
+                
+            </div>
+            <div class="botoes"> 
+                <button type="submit" class="btn">Concluir Edição</button>
+                <a href="/excluir_produtos/{{produto[0]}}">Excluir Produto</a>
+            </div>
+        
+            
+        </form>
+        
+    </div>
+
+</body>
+</html>

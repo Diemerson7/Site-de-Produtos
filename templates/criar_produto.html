@@ -11,19 +11,21 @@
     <form action="/criar_produto" method="POST">
 
             <div class="input-box">
-              <input type="text" placeholder="Nome do produto">
+              <input name="nome_do_produto" type="text" placeholder="Nome do produto">
             </div>
 
             <div class="input-box">
-              <input type="number" placeholder="Preço do produto">
+              <input name="preco" type="number" placeholder="Preço do produto">
             </div>
-          
+
+            <div class="input-box">
+              <input name="imagem" type="text" placeholder="Url da imagem">
+            </div>
     </div>
         
-
         <br>
         <div class="botoes">
-            <a href="/home" class="button criar-produto">Criar Produto</a>
+            <button type="submit" class="button criar-produto">Criar Produto</button>
         </div>
     </form>
 </body>

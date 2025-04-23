@@ -23,10 +23,9 @@
         <h1>TechStore</h1>
         </div>
 
-        <ul class="nav">
+        <ul class="nav">    
             <li><a href="/home">Home</a></li>
             <li><a href="/criar_produto">Produtos</a></li>
-            <li><a href="#">Eventos</a></li>
         </ul>
 
     </header>
@@ -41,27 +40,20 @@
     <section class="tab_products">
         <h2 class="header2">Nossos <span>Produtos</span></h2>
         <div class="cards">
+            {%for produto in produtos%}
             <div class="card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#e560ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shirt-icon lucide-shirt"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
-                <h2>Camisetas</h2>
-                <p>Camisetas exclusivas para devs</p>
-                <span>Em Breve <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </span>
-            </div>
+                <img src="{{produto[3]}}" width="100" height="100">
 
-            <div class="card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#e560ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee-icon lucide-coffee"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
-                <h2>Canecas</h2>
-                <p>Canecas Personalizadas</p>
-                <span>Em Breve <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </span>
-            </div>
 
-            <div class="card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#e560ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sticker-icon lucide-sticker"><path d="M15.5 3H5a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2V8.5L15.5 3Z"/><path d="M14 3v4a2 2 0 0 0 2 2h4"/><path d="M8 13h.01"/><path d="M16 13h.01"/><path d="M10 16s.8 1 2 1c1.3 0 2-1 2-1"/></svg>
-                <h2>Stickers</h2>
-                <p>Adesivos para notebook</p>
-                <span>Em Breve <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg> </span>
-            </div>
 
+                
+                <h2>{{produto[1]}}</h2>
+                <span>R$ {{produto[2]}}</span>
+            </div>
+            {%endfor%}
+            
+            
+            
         </div>
     </section>
 

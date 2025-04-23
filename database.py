@@ -77,8 +77,31 @@ def selecionar_musica(id):
     return cursor.fetchone()
 
 
+def criar_produto(nome, preco, caminho_imagem, email):
+    conexao = conectar_banco()
+    cursor = conexao.cursor()
+    cursor.execute('''INSERT INTO produtos (nome, preco, imagem, email)
+                   VALUES (?, ?, ?, ?)''',
+                    (nome, preco, caminho_imagem, email)) 
+    conexao.commit()
+    return True
 
 
+def editar_produto(nome, preco, caminho_imagem, id):
+    conexao = conectar_banco()
+    cursor = conexao.cursor()
+    cursor.execute('''UPDATE produtos SET nome=?, preco=?, imagem=? WHERE id=?''', (nome, preco, caminho_imagem, id))
+    conexao.commit()
+    cursor.close()
+
+
+def excluir_produto(id):
+    print(id)
+    conexao = conectar_banco()
+    cursor = conexao.cursor()
+    cursor.execute('''DELETE FROM produtos WHERE id=?''', (id,))
+    conexao.commit()
+    cursor.close()
 
 
 

@@ -36,6 +36,7 @@ def cadastro():
     else:
             return render_template('cadastro.html')
 
+
 @app.route('/home', methods=["GET", "POST"])
 def home():
     produtos = database.selecionar_produtos(session['email'])
@@ -56,10 +57,30 @@ def criar_produto():
         database.criar_produto(nome, preco, caminho_imagem, session['email'])
         produtos = database.selecionar_produtos(session['email'])
         return redirect(url_for('home'))
+    
+    
+@app.route('/editar/<id>', methods=["GET", "POST"])
+def editar(id):
+    if request.method=="GET":
+        produto = database.selecionar_produtos(id)
+        return render_template('editar.html', produto = produto)
+    
+
+@app.route('/editar_produtos/<id>', methods=["POST"])
+def editar_produto(id):
+    if request.method == "POST":
+        nome = request.form['nome']
+        preco = request.form['preco']
+        caminho_imagem = request.form['imagem'] 
+        database.editar_produto(nome, preco, caminho_imagem, id)
+        return redirect('/home')
 
 
-
-
+@app.route('/excluir_produto/<id>')
+def excluir(id):
+    print(id[0])
+    database.excluir_produto(id[0])
+    return redirect('/home')
 
 
 

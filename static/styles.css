@@ -331,3 +331,6 @@ input {
   transform: translateY(0);
 }
 
+.card img {
+  border-radius: 10px;
+}
