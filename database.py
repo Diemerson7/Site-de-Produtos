@@ -70,10 +70,10 @@ def selecionar_produtos(email):
     return cursor.fetchall()
 
 
-def selecionar_musica(id):
+def selecionar_produto(id):
     conexao = conectar_banco()
     cursor = conexao.cursor()
-    cursor.execute('''SELECT id FROM produtos WHERE id=?''', (id,))
+    cursor.execute('''SELECT * FROM produtos WHERE id=?''', (id,))
     return cursor.fetchone()
 
 

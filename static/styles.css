@@ -334,3 +334,36 @@ input {
 .card img {
   border-radius: 10px;
 }
+
+.button.concluir-edicao {
+  width: 350px;
+  margin: 10px;
+  background-color: #fff;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.button.concluir-edicao:hover {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.button.concluir-edicao:active {
+  transform: translateY(0);
+}
+
+header.botoes {
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+

@@ -62,24 +62,20 @@ def criar_produto():
 @app.route('/editar/<id>', methods=["GET", "POST"])
 def editar(id):
     if request.method=="GET":
-        produto = database.selecionar_produtos(id)
+        produto = database.selecionar_produto(id)
         return render_template('editar.html', produto = produto)
     
-
-@app.route('/editar_produtos/<id>', methods=["POST"])
-def editar_produto(id):
     if request.method == "POST":
         nome = request.form['nome']
         preco = request.form['preco']
-        caminho_imagem = request.form['imagem'] 
+        caminho_imagem = request.form['caminho_imagem'] 
         database.editar_produto(nome, preco, caminho_imagem, id)
         return redirect('/home')
 
-
 @app.route('/excluir_produto/<id>')
 def excluir(id):
-    print(id[0])
-    database.excluir_produto(id[0])
+    print(id)
+    database.excluir_produto(id)
     return redirect('/home')
 
 

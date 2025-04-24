@@ -40,18 +40,20 @@
     <section class="tab_products">
         <h2 class="header2">Nossos <span>Produtos</span></h2>
         <div class="cards">
-            {%for produto in produtos%}
+
+
+            {% for produto in produtos %}
+            <a href="/editar/{{produto[0]}}">
             <div class="card">
-                <img src="{{produto[3]}}" width="100" height="100">
+              <img src="{{produto[3]}}"  width="100" height="100">  
 
-
-
-                
-                <h2>{{produto[1]}}</h2>
-                <span>R$ {{produto[2]}}</span>
+              <div class="card-content">
+                <h3> {{produto[1]}} </h3>
+                <p>R$ {{produto[2]}} </p> 
+              </div>
             </div>
-            {%endfor%}
-            
+            </a>
+            {% endfor %}
             
             
         </div>
