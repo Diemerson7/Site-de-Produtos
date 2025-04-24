@@ -43,5 +43,7 @@ O site foi estilizado com **CSS puro**, utilizando a fonte **Poppins** e efeitos
 5.Editar produtos
 - Alterar informações: Nome, Preço e imagem.
 
-## 📁 Estrutura de arquivos
+## 📁 Vídeo Site 
+
+https://youtu.be/5xL8QYlP-Jw
 
